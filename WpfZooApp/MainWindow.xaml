@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="label" Content="Zoo Liste" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-7.669,-1.886"/>
+        <ListBox x:Name="listZoos" HorizontalAlignment="Left" Height="175" SelectionChanged="listZoos_SelectionChanged" Margin="10,41,0,0" VerticalAlignment="Top" Width="175" RenderTransformOrigin="0.41,0.33"/>
+        <ListBox x:Name="listAssociatedAnimals" HorizontalAlignment="Left" Height="175" Margin="224,41,0,0" VerticalAlignment="Top" Width="175" RenderTransformOrigin="-2.058,-0.729"/>
+        <Label x:Name="label1" Content="Tiere in ausgewählten Zoo" HorizontalAlignment="Left" Margin="224,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Alle Tiere" HorizontalAlignment="Left" Margin="598,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.752,-0.506"/>
+        <ListBox x:Name="listAllAnimals" HorizontalAlignment="Left" Height="304" Margin="598,41,0,0" VerticalAlignment="Top" Width="138"/>
+
     </Grid>
 </Window>
