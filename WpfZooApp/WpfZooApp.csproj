@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="udemy_tutorialDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>udemy_tutorialDataSet.xsd</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +95,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="udemy_tutorialDataSet.xsc">
+      <DependentUpon>udemy_tutorialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="udemy_tutorialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>udemy_tutorialDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="udemy_tutorialDataSet.xss">
+      <DependentUpon>udemy_tutorialDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
